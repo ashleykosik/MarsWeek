@@ -1,6 +1,6 @@
 public class Mars {
     private static boolean landingCheck(int minutesLeft) throws InterruptedException  {
-        for (int minute = 0; minute <= minutesLeft; i++) {
+        for (int minute = 0; minute <= minutesLeft; minute++) {
             if (((minute % 2) == 0) && ((minute % 3) == 0)) {
                 System.out.println("Center");
             } else if (minute % 2 == 0) {
@@ -47,7 +47,11 @@ public class Mars {
             System.out.println("ERROR!!! Flight plan already set. Landing on the Plain");
         }
 
-        landingCheck(30)
+        // # of minutes runs the for loop #+2 times?
+        landingCheck(1);
 
+        //new GuessingGame();
+
+        new MarsExpedition();
     }
 }
