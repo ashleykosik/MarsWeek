@@ -24,7 +24,7 @@ public class Mars {
         boolean landing = true;
 
         //Beginning with the landing process and continuing until food production is underway on Mars,
-        // everyone will eat 0.75 meals a day to perserve food. The landing process takes 2 days.
+        // everyone will eat 0.75 meals a day to preserve food. The landing process takes 2 days.
         //Calculate how many meals are left after landing using mathematical operators.
         double landingFoodEaten = shipPopulation * 0.75; //225
         meals = meals - landingFoodEaten;
@@ -38,7 +38,7 @@ public class Mars {
         int babies = 5;
         shipPopulation += babies;
 
-        //The ship is coming into it’s final descent and you need to figure out where to land.
+        //The ship is coming into its final descent & you need to figure out where to land.
         String landingLocation = "The Plain";
 
         if (landingLocation.equals("The Plain")) {
@@ -47,11 +47,13 @@ public class Mars {
             System.out.println("ERROR!!! Flight plan already set. Landing on the Plain");
         }
 
-        // # of minutes runs the for loop #+2 times?
-        landingCheck(1);
 
-        //new GuessingGame();
+        landingCheck(10);
+
+        new GuessingGame();
 
         new MarsExpedition();
+
+        new FindingsList();
     }
 }

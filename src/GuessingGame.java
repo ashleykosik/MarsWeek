@@ -30,7 +30,7 @@ public class GuessingGame {
             try {
                 guess = input.nextInt();
             } catch (InputMismatchException e) {
-                String bad_input = input.next(); // need to progress past bad input
+                String bad_input = input.next(); // need to skip bad input
                 System.out.println("That's not an integer, try again");
                 continue;
             }
